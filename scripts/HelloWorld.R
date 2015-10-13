@@ -7,6 +7,8 @@
 ##Installs required packages
 #install.packages(c("dplyr"))
 
+### Here's a random note to test pull/push/stage/etc. Working? Hopefully!
+
 ##Load packages
 library(dplyr)
 
@@ -33,6 +35,7 @@ model <- lm(gdp~year,data=canada)
 summary(model)
 
 ####Make Figures#####
+## need to create a plots folder! ##
 pdf("./plots/Fig1_Canada_GDP.pdf",width=5,height=5)
 plot(x=canada$year,y=canada$gdp,type = "p",
      xlab="Year",
